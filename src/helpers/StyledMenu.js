@@ -1,5 +1,5 @@
-import { styled, alpha } from "@mui/material/styles";
-import Menu, { MenuProps } from "@mui/material/Menu";
+import { styled } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
 import React from "react";
 
 const StyledMenu = styled((props) => (
@@ -24,7 +24,6 @@ const StyledMenu = styled((props) => (
     boxShadow:
       "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     "& .MuiMenu-list": {
-      padding: "6px 0",
       padding: 3,
     },
     "& .MuiMenuItem-root": {
