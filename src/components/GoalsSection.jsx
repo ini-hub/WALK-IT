@@ -1,4 +1,3 @@
-import { Subscript } from "@mui/icons-material";
 import { Typography, Box } from "@mui/material";
 import React from "react";
 import Goals from "../assets/images/goals.jpg";
