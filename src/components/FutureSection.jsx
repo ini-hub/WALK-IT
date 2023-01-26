@@ -7,7 +7,7 @@ import jona from "../assets/svgs/jona.png";
 const FutureSection = () => {
   return (
     <>
-      <Box display="flex" sx={{ paddingTop: 10 }}>
+      <Box display="flex" sx={{ paddingTop: 5 }}>
         <Box sx={{ paddingTop: 5, paddingLeft: 3, width: "15%" }}>
           <img src={girl} alt="Blind Girl" />
         </Box>
@@ -23,7 +23,7 @@ const FutureSection = () => {
             The future of{" "}
             <span
               style={{
-                borderBottom: "3px solid white",
+                borderBottom: "4px solid white",
                 display: "inline-block",
                 lineHeight: "20px",
                 borderColor: "#FED636",
@@ -34,7 +34,7 @@ const FutureSection = () => {
             </span>
             <span
               style={{
-                borderBottom: "3px solid white",
+                borderBottom: "4px solid white",
                 display: "inline-block",
                 lineHeight: "20px",
                 borderColor: "#FED636",
@@ -50,9 +50,10 @@ const FutureSection = () => {
               fontFamily: "PoppinsRegular",
               paddingTop: 4,
               fontWeight: 600,
+              width: '87%'
             }}
           >
-            We are building a revolutionary device called “White Bot” designed
+            We are building a revolutionary device called <span style={{  color:'#48017D'}}> “White Bot”</span> designed
             to help visually impaired individuals navigate the world around them
             with ease and confidence
           </Typography>
@@ -63,9 +64,10 @@ const FutureSection = () => {
                 borderRadius: "30px",
                 backgroundColor: "#48017D",
                 padding: 1,
-                width: "30%",
+                width: {xs: "50%", md: "30%"},
                 textTransform: "none",
                 fontFamily: "PoppinsRegular",
+                overflow:'hidden'
               }}
             >
               Learn more
@@ -95,8 +97,13 @@ const FutureSection = () => {
             </Box>
           </Box>
         </Box>
-        <Box>
-          <Box>Video here</Box>
+        <Box sx={{
+          textAlign:'center',
+          justifyContent:'center',
+          alignItems:'center',
+          
+        }}>
+          <Typography>Video here</Typography>
         </Box>
       </Box>
     </>

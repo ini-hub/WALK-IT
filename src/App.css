@@ -1,4 +1,16 @@
-a, p{
+@font-face {
+  font-family: Poppins;
+  src: url(../src/assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../src/assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../src/assets/fonts/Poppins-Regular.ttf);
+}
+a,
+p {
   text-decoration: none;
 }
-

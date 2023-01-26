@@ -1,9 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import CardWallet from "../assets/images/CardWallet.jpg";
-import DisabledAccess from "../assets/images/DisabledAccess.jpg";
-import AccompanySkinType from "../assets/images/AccompanySkinType.jpg";
-import DeleteShield from "../assets/images/DeleteShield.jpg";
-
+import { issues } from "../assets/constant/issues";
 import React from "react";
 
 const TargetSection = () => {
@@ -17,7 +13,7 @@ const TargetSection = () => {
           fontFamily: "PoppinsRegular",
         }}
       >
-        <Box sx={{ padding: 15, mr: 13, ml: 13 }}>
+        <Box sx={{ padding: {md: 10, xs:5}, mr: 13, ml: 13 }}>
           <Typography
             sx={{ fontFamily: "Poppins", paddingBottom: 3, fontSize: "20px" }}
           >
@@ -41,88 +37,31 @@ const TargetSection = () => {
             issues we are targeting.
           </Typography>
           <Grid container sx={{ marginTop: 2 }} spacing={4}>
-            <Grid item xs={6}>
-              <Box
-                sx={{
-                  backgroundColor: "white",
-                  borderRadius: 3,
-                  color: "black",
-                  padding:3
-                }}
-              >
-                <Typography>
-                  <img src={CardWallet} alt="Card Wallet" />
-                </Typography>
-                <Typography sx={{ fontFamily: "Poppins", marginTop: 1 }}>
-                  Affordability
-                </Typography>
-                <Typography sx={{ fontFamily: "PoppinsRegular" }}>
-                  Many Electronic traveling aid devices designed for the
-                  visually impaired are relatively costly.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={6}>
-              <Box
-                sx={{
-                  backgroundColor: "white",
-                  borderRadius: 3,
-                  color: "black",
-                  padding:3
-                }}
-              >
-                <Typography>
-                  <img src={DisabledAccess} alt="DisabledAccess" />
-                </Typography>
-                <Typography sx={{ fontFamily: "Poppins" }}>
-                  Stigmatization
-                </Typography>
-                <Typography sx={{ fontFamily: "PoppinsRegular" }}>
-                  There is a stigma attached to the use of white cane in the
-                  society
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={6}>
-              <Box
-                sx={{
-                  backgroundColor: "white",
-                  borderRadius: 3,
-                  color: "black",
-                  padding:3
-                }}
-              >
-                <Typography>
-                  <img src={DeleteShield} alt="Delete Shield" />
-                </Typography>
-                <Typography sx={{ fontFamily: "Poppins" }}>
-                  Insecurity
-                </Typography>
-                <Typography sx={{ fontFamily: "PoppinsRegular" }}>
-                  The visually impaired are susceptible to harm in the society
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={6}>
-              <Box
-                sx={{
-                  backgroundColor: "white",
-                  borderRadius: 3,
-                  color: "black",
-                  padding:3
-                }}
-              >
-                <Typography>
-                  <img src={AccompanySkinType} alt="AccompanySkinType" />
-                </Typography>
-                <Typography sx={{ fontFamily: "Poppins" }}>
-                  Immobility
-                </Typography>
-                <Typography sx={{ fontFamily: "PoppinsRegular" }}>
-                  The visually impared cannot move around with ease
-                </Typography>
-              </Box>
-            </Grid>
+            {issues &&
+              issues.map((issue) => (
+                <Grid item xs={6} md={6}>
+                  <Box
+                    sx={{
+                      backgroundColor: "white",
+                      borderRadius: 3,
+                      color: "black",
+                      padding: 3,
+                      maxHeight: '500px',
+                      maxWidth:'100%'
+                    }}
+                  >
+                    <Typography>
+                      <img src={issue.url} alt="Card Wallet" />
+                    </Typography>
+                    <Typography sx={{ fontFamily: "Poppins", marginTop: 1 }}>
+                      {issue.title}
+                    </Typography>
+                    <Typography sx={{ fontFamily: "PoppinsRegular" }}>
+                      {issue.note}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
           </Grid>
         </Box>
       </Box>

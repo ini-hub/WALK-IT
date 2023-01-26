@@ -1,11 +1,19 @@
-import './App.css';
-import Layout from './components/Layout';
+import "./App.css";
+import Layout from "./components/Layout";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
+  const headingFont = createTheme({
+    typography: {
+      fontFamily: ["Poppins", "sans-serif"].join(','),
+    },
+  });
   return (
-    <div className="App">
-      <Layout />
-    </div>
+    <ThemeProvider theme={headingFont}>
+      <div className="App">
+        <Layout />
+      </div>
+    </ThemeProvider>
   );
 }
 
