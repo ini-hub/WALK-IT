@@ -2,9 +2,7 @@ import {
   Button,
   Divider,
   MenuItem,
-  Typography,
   Box,
-  AppBar,
 } from "@mui/material";
 import React from "react";
 import { useState } from "react";
@@ -21,15 +19,15 @@ import { ReactComponent as Community } from "../assets/svgs/community.svg";
 const MainNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [anchorElForJoin, setAnchorElForJoin] = useState(null);
-  const open = Boolean(anchorEl);
+  // const open = Boolean(anchorEl);
   const openJoin = Boolean(anchorElForJoin);
 
-  const handleClick = (event) => {
-    console.log(event);
-    if (anchorEl !== event.currentTarget) {
-      setAnchorEl(event.currentTarget);
-    }
-  };
+  // const handleClick = (event) => {
+  //   console.log(event);
+  //   if (anchorEl !== event.currentTarget) {
+  //     setAnchorEl(event.currentTarget);
+  //   }
+  // };
   const handleClickJoin = (event) => {
     console.log(event);
     setAnchorElForJoin(event.currentTarget);
@@ -224,7 +222,6 @@ const styles = {
     margin: 0,
     textTransform: "capitalize",
     cursor: "default",
-    width: "18%",
     fontSize: "16px",
     "&:hover": {
       backgroundColor: "white",

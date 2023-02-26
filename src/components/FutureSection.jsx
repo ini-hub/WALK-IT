@@ -13,7 +13,6 @@ const FutureSection = () => {
           sx={{
             paddingTop: 5,
             paddingLeft: 3,
-            width: "15%", // width: "40%",
             backgroundImage: `url(${logoright})`,
             backgroundRepeat: "no-repeat",
             // top: 0,

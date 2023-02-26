@@ -1,4 +1,4 @@
-import { Box, Divider } from "@mui/material";
+import { Box } from "@mui/material";
 import arrow from "../assets/images/upwardArrow.png";
 import logo from "../assets/images/walkLogo.png";
 import Instagram from "../assets/images/instagram.png";
