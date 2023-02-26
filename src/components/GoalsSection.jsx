@@ -17,12 +17,10 @@ const GoalsSection = () => {
         <p
           style={{
             position: "absolute",
-            fontSize: "30px",
             height: "54px",
             left: "2px",
             top: "76px",
             width: "279px",
-            height: "54px",
             fontWeight: 600,
             fontSize: "36px",
             lineHeight: "54px",

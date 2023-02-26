@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import whiteBot from "../assets/images/whiteBot.png";
 import timeline from "../assets/images/timeline.png";
