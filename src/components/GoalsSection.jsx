@@ -5,77 +5,135 @@ import Goals from "../assets/images/goals.jpg";
 const GoalsSection = () => {
   return (
     <>
-      <Box sx={{ padding: { md: 10, xs: 5 }, mr: 13, ml: 13 }}>
-        <Box
-          sx={{
-            marginBottom: "20px",
+      <div
+        style={{
+          position: "absolute",
+          top: "1863px",
+          left: "207px",
+          width: "1000px",
+          height:'600px',
+        }}
+      >
+        <p
+          style={{
+            position: "absolute",
+            fontSize: "30px",
+            height: "54px",
+            left: "2px",
+            top: "76px",
+            width: "279px",
+            height: "54px",
+            fontWeight: 600,
+            fontSize: "36px",
+            lineHeight: "54px",
+            letterSpacing: "-0.02em",
           }}
         >
-          <Typography sx={{ fontSize: "30px" }}>
-            Goals of{" "}
-            <span
-              style={{
-                borderBottom: "3px solid white",
-                display: "inline-block",
-                lineHeight: "17px",
-                borderColor: "#FED636",
-                color:'#48017D'
-              }}
-            >
-              Walk IT
-            </span>
+          Goals of{" "}
+          <span
+            style={{
+              borderBottom: "3px solid white",
+              display: "inline-block",
+              lineHeight: "20px",
+              borderColor: "#FED636",
+              color: "#48017D",
+            }}
+          >
+            Walk IT
+          </span>
+        </p>
+
+        <Box
+          sx={{
+            width: "1051px",
+            height: "311px",
+            position: "absolute",
+            top: "201px"
+          }}
+        >
+          <img
+            src={Goals}
+            style={{ width: "1000px", height: "300px" }}
+            alt="Timeline"
+          />
+          <Typography
+            sx={{
+              position: "absolute",
+              width: "169px",
+              height: "72px",
+              left: "392px",
+              top: "61px",
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "24px",
+              lineHeight: "36px",
+              letterSpacing: "-0.02em",
+              color: "#111111",
+              // fontFamily:'PoppinsRegular'
+            }}
+          >
+            Good health & Well being
+          </Typography>
+
+          <Typography
+            sx={{
+              position: "absolute",
+              width: "278px",
+              height: "72px",
+              left: "750px",
+              top: "61px",
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "24px",
+              lineHeight: "36px",
+              letterSpacing: "-0.02em",
+              color: "#111111",
+            }}
+          >
+            Innovate mobility & Promote Independence
+          </Typography>
+
+          <Typography
+            sx={{
+              position: "absolute",
+              width: "136px",
+              height: "36px",
+              left: "392px",
+              top: "189px",
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "24px",
+              lineHeight: "36px",
+              letterSpacing: "-0.02em",
+              color: "#111111",
+            }}
+          >
+            Reduce CO<sub style={{fontSize:'10px'}}>2</sub>
+          </Typography>
+
+          <Typography
+            sx={{
+              position: "absolute",
+              width: "259px",
+              height: "72px",
+              left: "750px",
+              top: "189px",
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "24px",
+              lineHeight: "36px",
+              letterSpacing: "-0.02em",
+              color: "#111111",
+            }}
+          >
+            Save energy & money
           </Typography>
         </Box>
-
-        <Box sx={{ width: "100%", position: "relative" }}>
-          <img src={Goals} style={{ width: "100%" }} alt="Timeline" />
-          <Box
-            sx={{
-              position: "absolute",
-              top: "22%",
-              left: "35%",
-              width: "15%",
-            }}
-          >
-            <Typography>Good health & Well being CO</Typography>
-          </Box>
-
-          <Box
-            sx={{
-              position: "absolute",
-              top: "22%",
-              left: "73%",
-              width: "25%",
-            }}
-          >
-            <Typography>Innovate mobility & Promote Independence</Typography>
-          </Box>
-
-          <Box
-            sx={{
-              position: "absolute",
-              bottom: "33%",
-              left: "35%",
-              width: "15%",
-            }}
-          >
-            <Typography>
-              Reduce CO<sub>2</sub>
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              position: "absolute",
-              bottom: "33%",
-              left: "73%",
-              // width: "15%",
-            }}
-          >
-            <Typography>Save energy & money</Typography>
-          </Box>
-        </Box>
-      </Box>
+      </div>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { issues } from "../assets/constant/issues";
+import mask from "../assets/images/mask.png";
 import React from "react";
 
 const TargetSection = () => {
@@ -7,13 +8,22 @@ const TargetSection = () => {
     <>
       <Box
         sx={{
+          position:'absolute',
+          top:'770px',
+          height:'1017px',
           backgroundColor: "#48017D",
           marginTop: 7,
           color: "white",
-          fontFamily: "PoppinsRegular",
+          fontFamily: "PoppinsRegular",  
+          backgroundImage: `url(${mask})`,
+          backgroundRepeat:'no-repeat',
+          backgroundSize:'cover',
+          borderTop:'13px solid #eee',
+          borderLeft:'-55px solid white',
+          borderRight:'-55px solid white'
         }}
       >
-        <Box sx={{ padding: {md: 10, xs:5}, mr: 13, ml: 13 }}>
+        <Box sx={{ padding: { md: 10, xs: 5 }, mr: 13, ml: 13 }}>
           <Typography
             sx={{ fontFamily: "Poppins", paddingBottom: 3, fontSize: "20px" }}
           >
@@ -30,10 +40,10 @@ const TargetSection = () => {
             </span>
           </Typography>
           <Typography sx={{ fontFamily: "PoppinsRegular", paddingTop: 2 }}>
-            Statistics have shown that 30% of the world population are visually
-            impaired. Nigerians take 2% of this fraction making it about 4
-            million people which translates to the fact that 1 to 53 people in
-            Nigeria are visually impaired and the following are the common
+            Statistics have shown that <strong> 30% </strong>of the world population are visually
+            impaired. <strong>Nigerians</strong>  take <strong>2%</strong> of this fraction making it about <strong>4
+            million </strong> people which translates to the fact that <strong>1 to 53 people in
+            Nigeria are visually impaired</strong> and the following are the common
             issues we are targeting.
           </Typography>
           <Grid container sx={{ marginTop: 2 }} spacing={4}>
@@ -46,8 +56,8 @@ const TargetSection = () => {
                       borderRadius: 3,
                       color: "black",
                       padding: 3,
-                      maxHeight: '500px',
-                      maxWidth:'100%'
+                      height: "160px",
+                      maxWidth: "100%",
                     }}
                   >
                     <Typography>

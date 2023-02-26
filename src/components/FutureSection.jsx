@@ -3,15 +3,33 @@ import React from "react";
 import girl from "../assets/svgs/girl.png";
 import ncc from "../assets/svgs/Ncclogo.jpg";
 import jona from "../assets/svgs/jona.png";
+import logoright from "../assets/images/logo-right.png";
 
 const FutureSection = () => {
   return (
     <>
-      <Box display="flex" sx={{ paddingTop: 5 }}>
-        <Box sx={{ paddingTop: 5, paddingLeft: 3, width: "15%" }}>
+      <div display="flex" sx={{ paddingTop: 5, }}>
+        <Box
+          sx={{
+            paddingTop: 5,
+            paddingLeft: 3,
+            width: "15%", // width: "40%",
+            backgroundImage: `url(${logoright})`,
+            backgroundRepeat: "no-repeat",
+            // top: 0,
+            // right: 0,
+            position:'absolute',
+            width: "621px",
+            height: "731px",
+            left: "-374px",
+            top: "130px",
+          }}        >
           <img src={girl} alt="Blind Girl" />
         </Box>
-        <Box sx={{ width: "40%" }}>
+        <Box sx={{
+          position:'absolute',
+          top:'235px'
+        }}>
           <Typography
             sx={{
               fontSize: "40px",
@@ -27,7 +45,7 @@ const FutureSection = () => {
                 display: "inline-block",
                 lineHeight: "20px",
                 borderColor: "#FED636",
-                color:'#48017D'
+                color: "#48017D",
               }}
             >
               automated
@@ -38,7 +56,7 @@ const FutureSection = () => {
                 display: "inline-block",
                 lineHeight: "20px",
                 borderColor: "#FED636",
-                color:'#48017D'
+                color: "#48017D",
               }}
             >
               mobility
@@ -50,11 +68,12 @@ const FutureSection = () => {
               fontFamily: "PoppinsRegular",
               paddingTop: 4,
               fontWeight: 600,
-              width: '87%'
+              width: "87%",
             }}
           >
-            We are building a revolutionary device called <span style={{  color:'#48017D'}}> “White Bot”</span> designed
-            to help visually impaired individuals navigate the world around them
+            We are building a revolutionary device called{" "}
+            <span style={{ color: "#48017D" }}> “White Bot”</span> designed to
+            help visually impaired individuals navigate the world around them
             with ease and confidence
           </Typography>
           <div style={learnMoreButton}>
@@ -64,10 +83,10 @@ const FutureSection = () => {
                 borderRadius: "30px",
                 backgroundColor: "#48017D",
                 padding: 1,
-                width: {xs: "50%", md: "30%"},
+                width: { xs: "50%", md: "30%" },
                 textTransform: "none",
                 fontFamily: "PoppinsRegular",
-                overflow:'hidden'
+                overflow: "hidden",
               }}
             >
               Learn more
@@ -97,15 +116,16 @@ const FutureSection = () => {
             </Box>
           </Box>
         </Box>
-        <Box sx={{
-          textAlign:'center',
-          justifyContent:'center',
-          alignItems:'center',
-          
-        }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Typography>Video here</Typography>
         </Box>
-      </Box>
+      </div>
     </>
   );
 };

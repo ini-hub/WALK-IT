@@ -43,138 +43,167 @@ const MainNavigation = () => {
 
   return (
     <>
-      <AppBar
-        sx={{
-          p: 3,
-          pr: { md: 15, xs: 5 },
-          pl: { xs: 5, md: 15 },
-          position: "sticky",
-          backgroundColor: "#fff",
-          width: "100%",
-          boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      <nav
+        style={{
+          position: "absolute",
+          width: "1523px",
+          height: "76px",
+          left: "0px",
+          top: "51px",
+          boxShadow: "0px 6px 28px rgba(0, 0, 0, 0.15)",
         }}
       >
-        <Box display="flex">
-          <Box>
+        <div
+          style={{
+            display: "flex",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              width: "135px",
+              height: "41px",
+              left: "205px",
+              top: "21px",
+            }}
+          >
             <Logo />
-          </Box>
-          <Box display="flex" sx={{ width: "100%" }}>
-            <Box sx={{ float: "left", display: "flex", width: "100%" }}>
-              <Typography sx={{ width: "10%", padding: 1.5, ml: 10 }}>
-                <a href="/" style={{ textDecoration: "none", color: "black" }}>
-                  Our Story
-                </a>
-              </Typography>
+          </div>
 
-              <Button
-                id="about-us-button"
-                aria-controls={open ? "about-us-button" : ""}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                variant="contained"
-                // onClick={handleClick}
-                sx={styles.buttonStyle}
-                endIcon={<KeyboardArrowDownIcon />}
-                disableRipple
-                onMouseOver={handleClick}
-              >
-                About Us
-              </Button>
-              <StyledMenu
-                id="menu-item"
-                MenuListProps={{
-                  "aria-labelledby": "about-us-button",
-                  onMouseLeave: handleClose,
-                }}
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Values />
-                  </div>
-                  Core Values
-                </MenuItem>
-                <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
-                <MenuItem onClick={handleClose} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Benefits />
-                  </div>
-                  Benefits
-                </MenuItem>
-                <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
-                <MenuItem onClick={handleClose} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Mission />
-                  </div>
-                  Mission & Mission
-                </MenuItem>
-              </StyledMenu>
+          <a
+            href="/"
+            style={{
+              textDecoration: "none",
+              color: "black",
+              position: "absolute",
+              width: "75px",
+              height: "24px",
+              left: "399px",
+              top: "29px",
+              fontFamily: "PoppinsRegular",
+              fontStyle: "normal",
+              fontWeight: 500,
+              fontSize: "16px",
+              lineHeight: "24px",
+            }}
+          >
+            Our Story
+          </a>
 
-              <Button
-                id="join-us-button"
-                aria-controls={openJoin ? "join-us-button" : ""}
-                aria-haspopup="true"
-                aria-expanded={openJoin ? "true" : undefined}
-                variant="contained"
-                onClick={handleClickJoin}
-                sx={styles.buttonStyle}
-                endIcon={<KeyboardArrowDownIcon />}
-                disableRipple
-                onMouseOver={handleClickJoin}
-              >
-                Join Us
-              </Button>
-              <StyledMenu
-                id="menu-items"
-                MenuListProps={{
-                  "aria-labelledby": "join-us-button",
-                  onMouseLeave: handleCloseJoin,
-                }}
-                anchorEl={anchorElForJoin}
-                open={openJoin}
-                onClose={handleCloseJoin}
-              >
-                <MenuItem onClick={handleCloseJoin} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Partner />
-                  </div>
-                  As a Partner
-                </MenuItem>
-                <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
-                <MenuItem onClick={handleCloseJoin} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Volunteer />
-                  </div>
-                  Volunteer
-                </MenuItem>
-                <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
-                <MenuItem onClick={handleCloseJoin} disableRipple>
-                  <div style={{ padding: "6px 7px 0px 0px" }}>
-                    <Community />
-                  </div>
-                  Community
-                </MenuItem>
-              </StyledMenu>
-            </Box>
-            <Box sx={{ float: "right", width: "15%" }}>
-              <Button
-                sx={{
-                  backgroundColor: "#48017D",
-                  color: "white",
-                  fontFamily: "inherit",
-                  borderRadius: 10,
-                  width: "80%",
-                  padding: 1,
-                }}
-              >
-                FAQ
-              </Button>
-            </Box>
+          <button
+            id="about-us-button"
+            // aria-controls={open ? "about-us-button" : ""}
+            // aria-haspopup="true"
+            // aria-expanded={open ? "true" : undefined}
+            // variant="contained"
+            // onClick={handleClick}
+            style={{
+              position: "absolute",
+              width: "73px",
+              height: "21px",
+              left: "525px",
+              top: "82px",
+            }}
+            // endIcon={<KeyboardArrowDownIcon />}
+            // disableRipple
+            // onMouseOver={handleClick}
+          >
+            About Us
+          </button>
+          <StyledMenu
+            id="menu-item"
+            MenuListProps={{
+              "aria-labelledby": "about-us-button",
+              onMouseLeave: handleClose,
+            }}
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Values />
+              </div>
+              Core Values
+            </MenuItem>
+            <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
+            <MenuItem onClick={handleClose} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Benefits />
+              </div>
+              Benefits
+            </MenuItem>
+            <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
+            <MenuItem onClick={handleClose} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Mission />
+              </div>
+              Mission & Mission
+            </MenuItem>
+          </StyledMenu>
+
+          <Button
+            id="join-us-button"
+            aria-controls={openJoin ? "join-us-button" : ""}
+            aria-haspopup="true"
+            aria-expanded={openJoin ? "true" : undefined}
+            variant="contained"
+            onClick={handleClickJoin}
+            sx={styles.buttonStyle}
+            endIcon={<KeyboardArrowDownIcon />}
+            disableRipple
+            onMouseOver={handleClickJoin}
+          >
+            Join Us
+          </Button>
+          <StyledMenu
+            id="menu-items"
+            MenuListProps={{
+              "aria-labelledby": "join-us-button",
+              onMouseLeave: handleCloseJoin,
+            }}
+            anchorEl={anchorElForJoin}
+            open={openJoin}
+            onClose={handleCloseJoin}
+          >
+            <MenuItem onClick={handleCloseJoin} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Partner />
+              </div>
+              As a Partner
+            </MenuItem>
+            <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
+            <MenuItem onClick={handleCloseJoin} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Volunteer />
+              </div>
+              Volunteer
+            </MenuItem>
+            <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
+            <MenuItem onClick={handleCloseJoin} disableRipple>
+              <div style={{ padding: "6px 7px 0px 0px" }}>
+                <Community />
+              </div>
+              Community
+            </MenuItem>
+          </StyledMenu>
+
+          <Box sx={{ float: "right", width: "15%" }}>
+            <Button
+              sx={{
+                backgroundColor: "#48017D",
+                color: "white",
+                fontFamily: "inherit",
+                borderRadius: 10,
+                width: "80%",
+                padding: 1,
+              }}
+            >
+              FAQ
+            </Button>
           </Box>
-        </Box>
-      </AppBar>
+        </div>
+      </nav>
     </>
   );
 };
@@ -182,6 +211,11 @@ const MainNavigation = () => {
 export default MainNavigation;
 const styles = {
   buttonStyle: {
+    position: "absolute",
+    width: "73px",
+    height: "21px",
+    left: "525px",
+    top: "82px",
     backgroundColor: "white",
     borderColor: "none",
     color: "black",
