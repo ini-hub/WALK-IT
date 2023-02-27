@@ -8,7 +8,7 @@ import logoright from "../assets/images/logo-right.png";
 const FutureSection = () => {
   return (
     <>
-      <div display="flex" sx={{ paddingTop: 5, }}>
+      <div display="flex" sx={{ paddingTop: 5 }}>
         <Box
           sx={{
             paddingTop: 5,
@@ -17,91 +17,129 @@ const FutureSection = () => {
             backgroundRepeat: "no-repeat",
             // top: 0,
             // right: 0,
-            position:'absolute',
+            position: "absolute",
             width: "621px",
             height: "731px",
             left: "-374px",
             top: "130px",
-          }}        >
+          }}
+        >
           <img src={girl} alt="Blind Girl" />
         </Box>
-        <Box sx={{
-          position:'absolute',
-          top:'235px'
-        }}>
-          <Typography
-            sx={{
-              fontSize: "40px",
-              fontWeight: 900,
-              lineHeight: "50px",
-              fontFamily: "PoppinsBold",
+
+        <Box
+          sx={{
+            position: "absolute",
+            top: "265px",
+            left: "206px",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              width: "490px",
+              height: "317px",
             }}
           >
-            The future of{" "}
-            <span
-              style={{
-                borderBottom: "4px solid white",
-                display: "inline-block",
-                lineHeight: "20px",
-                borderColor: "#FED636",
-                color: "#48017D",
-              }}
-            >
-              automated
-            </span>
-            <span
-              style={{
-                borderBottom: "4px solid white",
-                display: "inline-block",
-                lineHeight: "20px",
-                borderColor: "#FED636",
-                color: "#48017D",
-              }}
-            >
-              mobility
-            </span>{" "}
-            for the visually impaired.
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "PoppinsRegular",
-              paddingTop: 4,
-              fontWeight: 600,
-              width: "87%",
-            }}
-          >
-            We are building a revolutionary device called{" "}
-            <span style={{ color: "#48017D" }}> “White Bot”</span> designed to
-            help visually impaired individuals navigate the world around them
-            with ease and confidence
-          </Typography>
-          <div style={learnMoreButton}>
-            <Button
+            <Typography
               sx={{
-                color: "white",
-                borderRadius: "30px",
-                backgroundColor: "#48017D",
-                padding: 1,
-                width: { xs: "50%", md: "30%" },
-                textTransform: "none",
-                fontFamily: "PoppinsRegular",
-                overflow: "hidden",
+                fontSize: "40px",
+                fontWeight: 900,
+                lineHeight: "40px",
+                fontFamily: "Poppins",
+                width: "479px",
+                height:'141px',
+                // letterSpacing:'-0.02em',
+                lineHeight: "117.02%",
+                letterSpacing: "-0.02em"
               }}
             >
-              Learn more
-            </Button>
+              The future of 
+              <p
+                style={{
+                  borderBottom: "4px solid white",
+                  display: "inline-block",
+                  lineHeight: "27px",
+                  borderColor: "#FED636",
+                  color: "#48017D",
+                  // letterSpacing:'-0.02em'
+                }}
+              >
+                automated
+              </p>
+              <span
+                style={{
+                  borderBottom: "4px solid white",
+                  display: "inline-block",
+                  lineHeight: "20px",
+                  borderColor: "#FED636",
+                  color: "#48017D",
+                  letterSpacing:'-0.02em'
+                }}
+              >
+                mobility
+              </span>{" "}
+              for the visually impaired.
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "PoppinsRegular",
+                paddingTop: 4,
+                fontWeight: 600,
+                width: "469px",
+                height: "78px",
+              }}
+            >
+              We are building a revolutionary device called{" "}
+              <span style={{ color: "#48017D" }}> “White Bot”</span> designed to
+              help visually impaired individuals navigate the world around them
+              with ease and confidence
+            </Typography>
+            <div style={learnMoreButton}>
+              <Button
+                sx={{
+                  color: "white",
+                  borderRadius: "30px",
+                  backgroundColor: "#48017D",
+                  padding: 1,
+                  // width: { xs: "50%", md: "30%" },
+                  textTransform: "none",
+                  fontFamily: "PoppinsRegular",
+                  overflow: "hidden",
+                  position: "absolute",
+                  width: "140px",
+                  height: "42px",
+                  fontSize:'16px'
+                }}
+              >
+                 Learn more
+              </Button>
+            </div>
           </div>
-          <Box sx={{ marginTop: 7, marginLeft: 10 }}>
+          <Box
+            sx={{
+              position: "absolute",
+              width: "215px",
+              height: "91px",
+              // left: "201px",
+              top: "356px",
+            }}
+          >
             <Typography
               sx={{
                 color: "#4E4E4E",
                 fontFamily: "PoppinsRegular",
                 fontWeight: 700,
+                position: "absolute",
+                top: "2px",
               }}
             >
               Partners
             </Typography>
-            <Box display="flex" sx={{ width: 100 }}>
+            <Box
+              display="flex"
+              sx={{ width: 100, position: "absolute", top: "35px" }}
+            >
               <div style={partnerStyle}>
                 <img style={{ marginTop: "10px" }} src={ncc} alt="Ncc Logo" />{" "}
               </div>
