@@ -44,7 +44,6 @@ const TargetSection = () => {
               top: "0px",
               fontStyle: "normal",
               fontWeight: 500,
-              fontSize: "20px",
               lineHeight: "30px",
               letterSpacing: "-0.02em",
               color: "#FFFFFF",
@@ -70,7 +69,6 @@ const TargetSection = () => {
               height: "90px",
               left: "0px",
               top: "72px",
-              fontFamily: "PoppinsRegular",
               fontStyle: "normal",
               fontWeight: 500,
               fontSize: "20px",
@@ -117,13 +115,10 @@ const TargetSection = () => {
                         fontFamily: "PoppinsRegular",
                         fontWeight: 500,
                         marginTop: 0.5,
-                        fontFamily: "PoppinsRegular",
                         fontStyle: "normal",
-                        fontWeight: 500,
                         fontSize: "17px",
                         lineHeight: "26px",
                         letterSpacing: "-0.02em",
-
                         color: "#111111",
                       }}
                     >
