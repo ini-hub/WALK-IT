@@ -45,7 +45,7 @@ const FutureSection = () => {
               sx={{
                 fontSize: "40px",
                 fontWeight: 900,
-                lineHeight: "40px",
+                // lineHeight: "40px",
                 fontFamily: "Poppins",
                 width: "479px",
                 height:'141px',

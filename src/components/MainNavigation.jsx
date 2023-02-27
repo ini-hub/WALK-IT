@@ -1,12 +1,10 @@
-import { Button, Divider, MenuItem, Box } from "@mui/material";
+import { Button, Divider, MenuItem } from "@mui/material";
 import React from "react";
 import { useState } from "react";
-import { ReactComponent as Logo } from "../assets/svgs/logo.svg";
 import StyledMenu from "../helpers/StyledMenu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { ReactComponent as Values } from "../assets/svgs/values.svg";
 import { ReactComponent as Benefits } from "../assets/svgs/benefits.svg";
-import { ReactComponent as Mission } from "../assets/svgs/mission.svg";
 import { ReactComponent as Partner } from "../assets/svgs/partner2.svg";
 import { ReactComponent as Volunteer } from "../assets/svgs/volunteer.svg";
 import { ReactComponent as Community } from "../assets/svgs/community.svg";
@@ -326,27 +324,3 @@ const MainNavigation = () => {
 };
 
 export default MainNavigation;
-const styles = {
-  buttonStyle: {
-    position: "absolute",
-    width: "73px",
-    height: "21px",
-    left: "525px",
-    top: "82px",
-    backgroundColor: "white",
-    borderColor: "none",
-    color: "black",
-    fontFamily: "Poppins",
-    boxShadow: "none",
-    margin: 0,
-    textTransform: "capitalize",
-    cursor: "default",
-    width: "18%",
-    fontSize: "16px",
-    "&:hover": {
-      backgroundColor: "white",
-      boxShadow: "none",
-      borderColor: "none",
-    },
-  },
-};
