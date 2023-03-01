@@ -6,17 +6,15 @@ import React from "react";
 const TargetSection = () => {
   return (
     <>
-    <div style={{
-      position:'relative'
-    }}>
+    <div>
       <div
         style={{
           position: "absolute",
-          top: "770px",
+          top: "750px",
           backgroundColor: "#FED636",
           height: "150px",
           width:'100%',
-          clipPath: "polygon(0% 14%, 0% 100%, 100% 100%, 100% 14%, 76% 55%)",
+          clipPath: "polygon(0% 30%, 0% 100%, 100% 100%, 100% 30%, 76% 70%)",
         }}
       >
       </div>

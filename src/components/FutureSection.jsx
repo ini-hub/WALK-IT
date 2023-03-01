@@ -7,7 +7,7 @@ import logoright from "../assets/images/logo-right.png";
 const FutureSection = () => {
   return (
     <>
-      <div display="flex">
+      <Box>
         <Box
           sx={{
             paddingTop: 5,
@@ -16,9 +16,10 @@ const FutureSection = () => {
             backgroundRepeat: "no-repeat",
             position: "absolute",
             width: "621px",
-            height: "721px",
+            height: "600px",
             left: "0px",
-            top: "130px",
+            top: "110px",
+            //  backgroundColor:'black',
           }}
         >
         </Box>
@@ -26,6 +27,7 @@ const FutureSection = () => {
         <Box
           sx={{
             position: "absolute",
+            // backgroundColor:'black',
             top: "265px",
             left: "206px",
           }}
@@ -35,6 +37,7 @@ const FutureSection = () => {
               position: "absolute",
               width: "490px",
               height: "317px",
+              // backgroundColor:'black'
             }}
           >
             <Typography
@@ -51,7 +54,7 @@ const FutureSection = () => {
               }}
             >
               The future of &nbsp;
-              <p
+              <span
                 style={{
                   borderBottom: "4px solid white",
                   display: "inline-block",
@@ -62,7 +65,7 @@ const FutureSection = () => {
                 }}
               >
                 automated
-              </p>
+              </span>
               <span
                 style={{
                   borderBottom: "4px solid white",
@@ -151,6 +154,8 @@ const FutureSection = () => {
         </Box>
         <Box
           sx={{
+            position:'absolute',
+            left:'811px',
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center",
@@ -158,14 +163,14 @@ const FutureSection = () => {
         >
           <Typography>Video here</Typography>
         </Box>
-      </div>
+      </Box>
     </>
   );
 };
 
 export default FutureSection;
 const learnMoreButton = {
-  "margin-top": "20px",
+  "marginTop": "20px",
 };
 const partnerStyle = {
   width: "100%",

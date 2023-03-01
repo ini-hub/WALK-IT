@@ -158,7 +158,7 @@ const MainNavigation = () => {
                   fontFamily: "PoppinsRegular",
                 }}
               >
-                Mission & Mission
+                Mission & Vision
               </span>
             </MenuItem>
           </StyledMenu>

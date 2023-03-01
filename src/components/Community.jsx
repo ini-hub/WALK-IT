@@ -167,11 +167,10 @@ const Community = () => {
                 color: "#F3F3F3",
               }}
             >
-              Make change happen
+              <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Make change happen</a>
             </p>
             <button
               style={{
-                fontFamily: "PoppinsRegular",
                 width: "140px",
                 height: "42px",
                 left: "645px",
@@ -185,7 +184,7 @@ const Community = () => {
                 fontWeight: 500,
               }}
             >
-              Volunteer
+              <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Volunteer</a> 
             </button>
           </div>
           <div>
@@ -256,7 +255,7 @@ const Community = () => {
                 fontWeight: 500,
               }}
             >
-              Join
+             <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Join</a> 
             </button>
           </div>
         </div>
