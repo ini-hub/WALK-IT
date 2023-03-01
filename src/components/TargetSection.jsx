@@ -6,23 +6,34 @@ import React from "react";
 const TargetSection = () => {
   return (
     <>
+    <div style={{
+      position:'relative'
+    }}>
+      <div
+        style={{
+          position: "absolute",
+          top: "770px",
+          backgroundColor: "#FED636",
+          height: "150px",
+          width:'100%',
+          clipPath: "polygon(0% 14%, 0% 100%, 100% 100%, 100% 14%, 76% 55%)",
+        }}
+      >
+      </div>
       <Box
         sx={{
-          position: "absolute",
+          position: "relative",
           top: "770px",
           height: "1017px",
           width: "100%",
           backgroundColor: "#48017D",
+          clipPath: "polygon(0% 4%, 0% 100%, 100% 100%, 100% 4%, 76% 10%)",
           // marginTop: 7,
           color: "white",
           fontFamily: "PoppinsRegular",
           backgroundImage: `url(${mask})`,
           backgroundRepeat: "no-repeat",
           backgroundPositionY: "-20px",
-          // backgroundSize:'cover',
-          // borderTop:'13px solid #eee',
-          // borderLeft:'-55px solid white',
-          // borderRight:'-55px solid white'
         }}
       >
         <div
@@ -36,7 +47,7 @@ const TargetSection = () => {
           <Typography
             sx={{
               fontFamily: "Poppins",
-              fontSize: "20px",
+              fontSize: "36px",
               position: "absolute",
               width: "411px",
               height: "54px",
@@ -54,7 +65,7 @@ const TargetSection = () => {
               style={{
                 borderBottom: "3px solid white",
                 display: "inline-block",
-                lineHeight: "17px",
+                lineHeight: "25px",
                 borderColor: "#FED636",
               }}
             >
@@ -87,8 +98,8 @@ const TargetSection = () => {
 
           <Grid
             container
-            sx={{ position: "absolute", top: "250px" }}
-            spacing={4}
+            sx={{ position: "absolute", top: "250px", width: "986px" }}
+            spacing={6}
           >
             {issues &&
               issues.map((issue) => (
@@ -130,6 +141,7 @@ const TargetSection = () => {
           </Grid>
         </div>
       </Box>
+      </div>
     </>
   );
 };

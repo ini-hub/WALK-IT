@@ -21,7 +21,7 @@ const Footer = () => {
           width: "1288px",
           height: "480px",
           left: "82px",
-          top: "4701px",
+          top: "3681px",
           display: "flex",
           right:'147px'
         }}
@@ -304,6 +304,7 @@ const Footer = () => {
             top: "441.57px",
             display: "flex",
             paddingBottom: "41px",
+            marginBottom:'10px'
             // border:'1px solid #717171'
           }}
         >

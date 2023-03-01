@@ -46,7 +46,7 @@ const GoalsSection = () => {
             width: "1051px",
             height: "311px",
             position: "absolute",
-            top: "201px"
+            top: "201px",
           }}
         >
           <img

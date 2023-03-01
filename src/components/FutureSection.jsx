@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import girl from "../assets/svgs/girl.png";
 import ncc from "../assets/svgs/Ncclogo.jpg";
 import jona from "../assets/svgs/jona.png";
 import logoright from "../assets/images/logo-right.png";
@@ -8,23 +7,20 @@ import logoright from "../assets/images/logo-right.png";
 const FutureSection = () => {
   return (
     <>
-      <div display="flex" sx={{ paddingTop: 5 }}>
+      <div display="flex">
         <Box
           sx={{
             paddingTop: 5,
             paddingLeft: 3,
             backgroundImage: `url(${logoright})`,
             backgroundRepeat: "no-repeat",
-            // top: 0,
-            // right: 0,
             position: "absolute",
             width: "621px",
-            height: "731px",
-            left: "-374px",
+            height: "721px",
+            left: "0px",
             top: "130px",
           }}
         >
-          <img src={girl} alt="Blind Girl" />
         </Box>
 
         <Box
@@ -47,14 +43,14 @@ const FutureSection = () => {
                 fontWeight: 900,
                 // lineHeight: "40px",
                 fontFamily: "Poppins",
-                width: "479px",
+                width: "487px",
                 height:'141px',
                 // letterSpacing:'-0.02em',
                 lineHeight: "117.02%",
                 letterSpacing: "-0.02em"
               }}
             >
-              The future of 
+              The future of &nbsp;
               <p
                 style={{
                   borderBottom: "4px solid white",
@@ -62,7 +58,7 @@ const FutureSection = () => {
                   lineHeight: "27px",
                   borderColor: "#FED636",
                   color: "#48017D",
-                  // letterSpacing:'-0.02em'
+                  letterSpacing:'-0.02em'
                 }}
               >
                 automated
@@ -71,7 +67,7 @@ const FutureSection = () => {
                 style={{
                   borderBottom: "4px solid white",
                   display: "inline-block",
-                  lineHeight: "20px",
+                  lineHeight: "27px",
                   borderColor: "#FED636",
                   color: "#48017D",
                   letterSpacing:'-0.02em'
