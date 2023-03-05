@@ -3,8 +3,17 @@ import React from "react";
 import ncc from "../assets/svgs/Ncclogo.jpg";
 import jona from "../assets/svgs/jona.png";
 import logoright from "../assets/images/logo-right.png";
+import video from "../assets/video/WalkitVideo.mp4";
+import overlay from '../assets/images/videoOverlay.png';
 
 const FutureSection = () => {
+  const removeImage = () => {
+    const overlayImage = document.getElementById('overlay-image');
+    overlayImage.remove();
+    overlayImage.display = "none";
+  }
+  
+
   return (
     <>
       <Box>
@@ -18,17 +27,16 @@ const FutureSection = () => {
             width: "621px",
             height: "600px",
             left: "0px",
-            top: "110px",
+            top: "50px",
             //  backgroundColor:'black',
           }}
-        >
-        </Box>
+        ></Box>
 
         <Box
           sx={{
             position: "absolute",
             // backgroundColor:'black',
-            top: "265px",
+            top: "205px",
             left: "206px",
           }}
         >
@@ -47,10 +55,10 @@ const FutureSection = () => {
                 // lineHeight: "40px",
                 fontFamily: "Poppins",
                 width: "487px",
-                height:'141px',
+                height: "141px",
                 // letterSpacing:'-0.02em',
                 lineHeight: "117.02%",
-                letterSpacing: "-0.02em"
+                letterSpacing: "-0.02em",
               }}
             >
               The future of &nbsp;
@@ -61,7 +69,7 @@ const FutureSection = () => {
                   lineHeight: "27px",
                   borderColor: "#FED636",
                   color: "#48017D",
-                  letterSpacing:'-0.02em'
+                  letterSpacing: "-0.02em",
                 }}
               >
                 automated
@@ -73,7 +81,7 @@ const FutureSection = () => {
                   lineHeight: "27px",
                   borderColor: "#FED636",
                   color: "#48017D",
-                  letterSpacing:'-0.02em'
+                  letterSpacing: "-0.02em",
                 }}
               >
                 mobility
@@ -108,10 +116,10 @@ const FutureSection = () => {
                   position: "absolute",
                   width: "140px",
                   height: "42px",
-                  fontSize:'16px'
+                  fontSize: "16px",
                 }}
               >
-                 Learn more
+                Learn more
               </Button>
             </div>
           </div>
@@ -154,14 +162,33 @@ const FutureSection = () => {
         </Box>
         <Box
           sx={{
-            position:'absolute',
-            left:'811px',
-            textAlign: "center",
-            justifyContent: "center",
-            alignItems: "center",
+            position: "absolute",
+            left: "811px",
+            top: "210px",
+            m:0, p:0,
+            overflow:"hidden",
           }}
         >
-          <Typography>Video here</Typography>
+          <img src={overlay} alt="Video Overlay" id="overlay-image" style={{
+              position:'absolute',
+              top: 0,
+              left: 0,
+              width:"70%", height:'422px'
+            }} onClick={removeImage} />
+          <video
+            width="800px"
+            height="422px"
+            autoPlay="autoplay"
+            onClick={removeImage}
+            style={{
+              borderRadius:'10px',
+              display: 'block'
+            }}
+            controls
+          >
+            
+            <source src={video} type="video/mp4" />
+          </video>
         </Box>
       </Box>
     </>
@@ -170,7 +197,7 @@ const FutureSection = () => {
 
 export default FutureSection;
 const learnMoreButton = {
-  "marginTop": "20px",
+  marginTop: "20px",
 };
 const partnerStyle = {
   width: "100%",
