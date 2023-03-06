@@ -16,7 +16,7 @@ const FutureSection = () => {
 
   return (
     <>
-      <Box>
+      <Box id="future_section">
         <Box
           sx={{
             paddingTop: 5,

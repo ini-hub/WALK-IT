@@ -6,7 +6,7 @@ import React from "react";
 const TargetSection = () => {
   return (
     <>
-    <div>
+    <div id="target_section">
       <div
         style={{
           position: "absolute",

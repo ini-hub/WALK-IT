@@ -58,13 +58,14 @@ const MainNavigation = () => {
     <>
       <nav
         style={{
-          position: "absolute",
+          position: "fixed",
           background: "white",
           width: "1523px",
           height: "76px",
           left: "0px",
           top: "0px",
           boxShadow: "0px 6px 28px rgba(0, 0, 0, 0.15)",
+          zIndex: 2,
         }}
       >
         <div
@@ -149,7 +150,11 @@ const MainNavigation = () => {
                   fontFamily: "PoppinsRegular",
                 }}
               >
-                Issues Targeted
+                <a
+                  href="/#target_section"
+                >
+                  Issues Targeted
+                </a>
               </span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
@@ -659,7 +664,7 @@ const MainNavigation = () => {
                 top: "280px",
               }}
             >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular"}}>
+              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In 2023, it was registered as a company named Walk IT Enterprise
                 with the Corporate Affairs Commission (CAC) to legalize all
                 activities being carried out. We also entered into partnership
