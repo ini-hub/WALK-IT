@@ -173,10 +173,10 @@ const FutureSection = () => {
               position:'absolute',
               top: 0,
               left: 0,
-              width:"70%", height:'422px'
+              width:"100%", height:'422px'
             }} onClick={removeImage} />
           <video
-            width="800px"
+            width="750px"
             height="422px"
             autoPlay="autoplay"
             onClick={removeImage}

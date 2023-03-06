@@ -149,7 +149,7 @@ const MainNavigation = () => {
                   fontFamily: "PoppinsRegular",
                 }}
               >
-                Core Values
+                Issues Targeted
               </span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
