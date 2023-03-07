@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
 import React from "react";
-import Goals from "../assets/images/goals.jpg";
+import Goals from "../assets/images/goals.svg";
 
 const GoalsSection = () => {
   return (

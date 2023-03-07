@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import whiteBot from "../assets/images/whiteBot.png";
-import timeline from "../assets/images/timeline.png";
-import signs from "../assets/images/signs.png";
+import whiteBot from "../assets/images/whiteBot.svg";
+import timeline from "../assets/images/timeline.svg";
+import signs from "../assets/images/signs.svg";
 
 const WhiteBot = () => {
   return (

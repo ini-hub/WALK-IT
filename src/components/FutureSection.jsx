@@ -1,8 +1,8 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import ncc from "../assets/svgs/Ncclogo.jpg";
-import jona from "../assets/svgs/jona.png";
-import logoright from "../assets/images/logo-right.png";
+import ncc from "../assets/svgs/NCC.svg";
+import jona from "../assets/svgs/jonapwd.svg";
+import logoright from "../assets/images/logo-right.svg";
 import video from "../assets/video/WalkitVideo.mp4";
 import overlay from '../assets/images/videoOverlay.png';
 
@@ -172,7 +172,7 @@ const FutureSection = () => {
               position:'absolute',
               top: 0,
               left: 0,
-              width:"100%", height:'422px'
+              height:'422px',
             }} onClick={removeImage} />
           <video
             width="750px"

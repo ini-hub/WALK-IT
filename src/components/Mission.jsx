@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import mission from "../assets/images/mission.png";
-import vision from "../assets/images/vision.png";
+import mission from "../assets/images/mission.svg";
+import vision from "../assets/images/vision.svg";
 import mask from "../assets/images/mask2.png";
 
 const Mission = () => {
