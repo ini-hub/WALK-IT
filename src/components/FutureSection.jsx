@@ -13,7 +13,6 @@ const FutureSection = () => {
     overlayImage.display = "none";
   }
   
-
   return (
     <>
       <Box id="future_section">

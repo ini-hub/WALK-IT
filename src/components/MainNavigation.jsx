@@ -15,6 +15,7 @@ import navbar4 from "../assets/images/navbar4.png";
 import logo from "../assets/images/walkLogo.png";
 import missionNav from "../assets/images/missionNav.png";
 
+
 const MainNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [anchorElForJoin, setAnchorElForJoin] = useState(null);
