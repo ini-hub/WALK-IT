@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button, Link } from "@mui/material";
 import React from "react";
 import partner from "../assets/images/partner.png";
 import volunteer from "../assets/images/volunteer.png";
@@ -97,8 +97,8 @@ const Community = () => {
             >
               Invest in our community
             </p>
-            <button
-              style={{
+            <Button
+              sx={{
                 fontFamily: "PoppinsRegular",
                 width: "140px",
                 height: "42px",
@@ -111,10 +111,17 @@ const Community = () => {
                 borderRadius: "29px",
                 border: "none",
                 fontWeight: 500,
+                textTransform:'none',
+                "&:hover":{
+                  backgroundColor:"#ffffff",
+                  border: "1px solid #FED636",
+                  color:"#48017D",
+                  fontWeight:"bold",
+                }
               }}
             >
-              Partner
-            </button>
+              <Link href="/" sx={{color:'#fff', fontFamily:'PoppinsRegular', textDecoration:"none", "&:hover": {color:"#48017D", }}}>Partner</Link> 
+            </Button>
           </div>
           <div>
             <div
@@ -169,8 +176,8 @@ const Community = () => {
             >
               <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Make change happen</a>
             </p>
-            <button
-              style={{
+            <Button
+              sx={{
                 width: "140px",
                 height: "42px",
                 left: "645px",
@@ -182,10 +189,17 @@ const Community = () => {
                 borderRadius: "29px",
                 border: "none",
                 fontWeight: 500,
+                textTransform:'none',
+                "&:hover":{
+                  backgroundColor:"#ffffff",
+                  border: "1px solid #FED636",
+                  color:"#48017D",
+                  fontWeight:"bold",
+                }
               }}
             >
-              <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Volunteer</a> 
-            </button>
+              <Link href="/" sx={{color:'#fff', fontFamily:'PoppinsRegular', textDecoration:"none", "&:hover": {color:"#48017D", }}}>Volunteer</Link> 
+            </Button>
           </div>
           <div>
             <div
@@ -239,8 +253,8 @@ const Community = () => {
             >
               Share your expertise, values and ideas
             </p>
-            <button
-              style={{
+            <Button
+              sx={{
                 fontFamily: "PoppinsRegular",
                 width: "110px",
                 height: "42px",
@@ -253,10 +267,17 @@ const Community = () => {
                 borderRadius: "29px",
                 border: "none",
                 fontWeight: 500,
+                textTransform:'none',
+                "&:hover":{
+                  backgroundColor:"#ffffff",
+                  border: "1px solid #FED636",
+                  color:"#48017D",
+                  fontWeight:"bold",
+                }
               }}
             >
-             <a href="/" style={{color:'#fff', fontFamily:'PoppinsRegular'}}>Join</a> 
-            </button>
+             <Link href="/" sx={{color:'#fff', fontFamily:'PoppinsRegular', textDecoration:"none", "&:hover": {color:"#48017D", }}}>Join</Link> 
+            </Button>
           </div>
         </div>
       </div>

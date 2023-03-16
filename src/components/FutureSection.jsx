@@ -116,6 +116,12 @@ const FutureSection = () => {
                   width: "140px",
                   height: "42px",
                   fontSize: "16px",
+                  "&:hover":{
+                    backgroundColor:"#ffffff",
+                    border: "1px solid #FED636",
+                    color:"#48017D",
+                    fontWeight:"bold",
+                  }
                 }}
               >
                 Learn more

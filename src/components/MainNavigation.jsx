@@ -336,9 +336,13 @@ const MainNavigation = () => {
               height: "42px",
               left: "1195px",
               top: "19px",
-              "&:hover": {
-                backgroundColor: "#48017D",
-              },
+              textTransform:'none',
+                "&:hover":{
+                  backgroundColor:"#ffffff",
+                  border: "1px solid #FED636",
+                  color:"#48017D",
+                  fontWeight:"bold",
+                }
             }}
             onClick={openOverlay}
           >
