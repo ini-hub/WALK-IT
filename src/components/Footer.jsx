@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
-import arrow from "../assets/images/upwardArrow.png";
-import logo from "../assets/images/walkLogo.png";
-import Instagram from "../assets/images/instagram.png";
-import Twitter from "../assets/images/twitter.png";
-import YouTube from "../assets/images/youTube.png";
-import Facebook from "../assets/images/facebook.png";
+import arrow from "../assets/images/upwardArrow.svg";
+import logo from "../assets/images/walkLogo.svg";
+import Instagram from "../assets/images/instagram.svg";
+import Twitter from "../assets/images/twitter.svg";
+import YouTube from "../assets/images/youTube.svg";
+import Facebook from "../assets/images/facebook.svg";
 import React from "react";
 
 const Footer = () => {

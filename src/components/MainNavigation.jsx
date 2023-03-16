@@ -8,11 +8,11 @@ import { ReactComponent as Benefits } from "../assets/svgs/benefits.svg";
 import { ReactComponent as Partner } from "../assets/svgs/partner2.svg";
 import { ReactComponent as Volunteer } from "../assets/svgs/volunteer.svg";
 import { ReactComponent as Community } from "../assets/svgs/community.svg";
-import navbar1 from "../assets/images/navbar1.png";
-import navbar2 from "../assets/images/navbar2.png";
-import navbar3 from "../assets/images/navbar3.png";
-import navbar4 from "../assets/images/navbar4.png";
-import logo from "../assets/images/walkLogo.png";
+import navbar1 from "../assets/images/navbar1.svg";
+import navbar2 from "../assets/images/navbar2.svg";
+import navbar3 from "../assets/images/navbar3.svg";
+import navbar4 from "../assets/images/navbar4.svg";
+import logo from "../assets/images/walkLogo.svg";
 import missionNav from "../assets/images/missionNav.png";
 
 

@@ -1,8 +1,8 @@
 import { Box, Button, Link } from "@mui/material";
 import React from "react";
-import partner from "../assets/images/partner.png";
-import volunteer from "../assets/images/volunteer.png";
-import join from "../assets/images/join.png";
+import partner from "../assets/images/partner.svg";
+import volunteer from "../assets/images/volunteer.svg";
+import join from "../assets/images/join.svg";
 
 const Community = () => {
   return (
