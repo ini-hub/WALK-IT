@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import Community from "./Community";
 import Footer from "./Footer";
-import FutureSection from "./FutureSection";
+import FutureSection from "./FutureSection/FutureSection";
 import Goals from "./GoalsSection";
 import MainNavigation from "./MainNavigation";
 import Mission from "./Mission";

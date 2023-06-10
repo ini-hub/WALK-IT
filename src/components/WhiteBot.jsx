@@ -12,9 +12,6 @@ const WhiteBot = () => {
           position: "absolute",
           top: "2426px",
           width: "1555px",
-          // right:'219px'
-          // height: "100%",
-          // width: "100%",
         }}
       >
         <div
@@ -24,7 +21,6 @@ const WhiteBot = () => {
             backgroundColor: "#111111",
             left: "0",
             width: "1555px",
-            // top: "2426px",
             color: "white",
           }}
         >
@@ -44,7 +40,6 @@ const WhiteBot = () => {
             >
               <p
                 style={{
-                  // fontFamily: "Poppins",
                   fontStyle: "normal",
                   fontWeight: 700,
                   fontSize: "32px",
@@ -57,7 +52,7 @@ const WhiteBot = () => {
               </p>
               <span
                 style={{
-                  // fontFamily: "Poppins",
+              
                   fontStyle: "normal",
                   fontWeight: 700,
                   fontSize: "64px",
