@@ -1,0 +1,181 @@
+.target-section{
+    /* top: 1151px; */
+}
+.yellow-div{
+    position: absolute;
+    top: 750px;
+    background-color: #FED636;
+    height: 150px;
+    width:100%;
+    clip-path: polygon(0% 30%, 0% 100%, 100% 100%, 100% 30%, 76% 70%);
+}
+.wrapper{
+    position: relative;
+    top: 770px;
+    height: 1017px;
+    width: 100%;
+    background-color: #48017D;
+    clip-path: polygon(0% 4%, 0% 100%, 100% 100%, 100% 4%, 76% 10%);
+    color: white;
+    font-family: "PoppinsRegular";
+    background-image: url('../../assets/images/mask.png');
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+}
+.first-div{
+    position: absolute;
+    top: 191px;
+    left: 206px;
+    right: 202px;
+}
+.issues{
+    font-family: "Poppins";
+    font-size: 36px;
+    position: absolute;
+    width: 411px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.targeting{
+    border-bottom: 3px solid white;
+    display: inline-block;
+    line-height: 25px;
+    border-color: #FED636;
+}
+.statistics{
+    font-family: "PoppinsRegular";
+    position: absolute;
+    width: 986px;
+    height: 90px;
+    left: 0px;
+    top: 72px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.grid{
+    position: absolute;
+    top: 250px; 
+    width: 986px;
+}
+.each-target-wrapper{
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 24px;
+    height: 160px;
+    max-width: 100%;
+}
+.title{
+    font-family: "Poppins";
+    /* margin-top: 8px; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.02em;  
+}
+.note{
+    font-family: "PoppinsRegular";
+    font-weight: 500;
+    margin-top: 0.5;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+@media screen and (max-width: 500px){
+    .target-section{
+     
+    }
+    .first-div{
+        position: absolute;
+        /* top: 191px; */
+        left: 40px;
+    }
+    .issues{
+        position: absolute;
+        left: 30px;
+        width: 251px;
+        height: 33px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        top: -50px;
+    }
+    .statistics{     
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        width: 310px;
+        height: 108px;
+        top: 0px;
+    }
+    .wrapper{
+        position: relative;
+        top: 1143px;
+        height: 1017px;
+        width: 100%;
+        background-color: #48017D;
+        clip-path: polygon(0% 4%, 0% 100%, 100% 100%, 100% 4%, 76% 10%);
+        color: white;
+        font-family: "PoppinsRegular";
+        background-image: url('../../assets/images/mask.png');
+        background-repeat: no-repeat;
+        background-position-y: -20px;
+    }
+    .yellow-div{
+        position: absolute;
+        top: 1123px;
+        background-color: #FED636;
+        height: 150px;
+        width:100%;
+        clip-path: polygon(0% 20%, 0% 90%, 100% 100%, 100% 20%, 76% 53%);
+    }
+    .grid{
+        position: absolute;
+        top: 150px; 
+        left: -50px;
+        width: 986px;
+        height: 1011px;
+    }
+    .each-target-wrapper{
+        background-color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: black;
+        padding: 24px;
+        height: 160px;
+        width: 219px;
+        max-width: 419px;
+    }
+    .title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: -0.02em;  
+    }
+    .note{
+        font-family: "Poppins";
+        font-weight: 500;
+        margin-top: 0.5;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        color: #111111;
+    }
+}
