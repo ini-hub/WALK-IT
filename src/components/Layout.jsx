@@ -6,7 +6,7 @@ import FutureSection from "./FutureSection/FutureSection";
 import Goals from "./GoalsSection";
 import MainNavigation from "./MainNavigation";
 import Mission from "./Mission";
-import TargetSection from "./TargetSection";
+import TargetSection from "./TargetSection/TargetSection";
 import WhiteBot from "./WhiteBot";
 
 const Layout = () => {
