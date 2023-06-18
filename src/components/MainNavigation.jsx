@@ -64,25 +64,7 @@ const MainNavigation = () => {
             <img src={logo} alt="Walk It Logo" width="135px" height="41px" />
           </div>
 
-          <p
-            className="our_story"
-            onClick={openStoryOverlay}
-            style={{
-              textDecoration: "none",
-              color: "black",
-              position: "absolute",
-              width: "95px",
-              height: "24px",
-              left: "399px",
-              top: "29px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-              fontWeight: 500,
-              fontSize: "16px",
-              lineHeight: "24px",
-              cursor: "pointer",
-            }}
-          >
+          <p className="our_story" onClick={openStoryOverlay}>
             Our Story
           </p>
 
@@ -93,6 +75,7 @@ const MainNavigation = () => {
             aria-expanded={open ? "true" : undefined}
             // variant="contained"
             onClick={handleClick}
+            className="about_us_btn"
             sx={{
               position: "absolute",
               width: "120px",
@@ -124,42 +107,26 @@ const MainNavigation = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Values />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
+              <span className="ff_poppins_reg">
                 <a href="/#target_section">Issues Targeted</a>
               </span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Benefits />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Benefits
-              </span>
+              <span className="ff_poppins_reg">Benefits</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <img src={missionNav} alt="" />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Mission & Vision
-              </span>
+              <span className="ff_poppins_reg">Mission & Vision</span>
             </MenuItem>
           </StyledMenu>
 
@@ -201,39 +168,25 @@ const MainNavigation = () => {
             onClose={handleCloseJoin}
           >
             <MenuItem onClick={handleCloseJoin} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Partner />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                As a Partner
-              </span>
+              <span className="ff_poppins_reg">As a Partner</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleCloseJoin} disableRipple>
               <div style={{ padding: "6px 7px 0px 0px" }}>
                 <Volunteer />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Volunteer
-              </span>
+              <span className="ff_poppins_reg">Volunteer</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleCloseJoin} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Community />
               </div>
               <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
+                className="ff_poppins_reg"
               >
                 Community
               </span>

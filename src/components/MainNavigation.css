@@ -36,3 +36,11 @@
   line-height: 24px;
   cursor: pointer;
 }
+
+.menu_icon{
+  
+  padding: 6px 7px 0px 0px;
+}
+.ff_poppins_reg{
+  font-family: "PoppinsRegular";
+}
