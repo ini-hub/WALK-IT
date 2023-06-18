@@ -319,9 +319,7 @@ const MainNavigation = () => {
         <div id="text" className="our_story_container">
           <p className="our_story_header">Our Story</p>
           <div className="our_story_text_wrapper">
-            <div
-              className="our_story_text our_story_text_first"
-            >
+            <div className="our_story_text our_story_text_first">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 This innovative idea came about during a training bootcamp in
                 enrolled in while in the university 2020. At the end of the
@@ -340,10 +338,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              className="our_story_text our_story_text_second"
-              
-            >
+            <div className="our_story_text our_story_text_second">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In the following years, a prototype I created was exhibited
                 during the Babcock University Computer Club (BUCC) Software
@@ -353,10 +348,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              className="our_story_text our_story_text_third"
-              
-            >
+            <div className="our_story_text our_story_text_third">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Over time, a goal-driven team inspired to achieve this value has
                 been growing, and this product has been iterated severally based
@@ -365,10 +357,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              className="our_story_text our_story_text_forth"
-              
-            >
+            <div className="our_story_text our_story_text_forth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In 2023, it was registered as a company named Walk IT Enterprise
                 with the Corporate Affairs Commission (CAC) to legalize all
@@ -378,10 +367,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              className="our_story_text our_story_text_fifth"
-              
-            >
+            <div className="our_story_text our_story_text_fifth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Today, we are continually working on new and innovative ways to
                 improve our products and services for our clients. Our team is
@@ -393,18 +379,6 @@ const MainNavigation = () => {
           </div>
           <button
             className="our_story_modal_close_btn"
-            style={{
-              position: "absolute",
-              width: "110px",
-              height: "42px",
-              left: "476px",
-              top: "509px",
-              backgroundColor: "#48017D",
-              border: "none",
-              borderRadius: "30px",
-              color: "#fff",
-              cursor: "pointer",
-            }}
             onClick={closeStoryOverlay}
           >
             <p>Close</p>
