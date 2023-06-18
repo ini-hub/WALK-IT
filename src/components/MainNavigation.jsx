@@ -15,6 +15,7 @@ import navbar4 from "../assets/images/navbar4.svg";
 import logo from "../assets/images/walkLogo.svg";
 import missionNav from "../assets/images/missionNav.png";
 
+import "./MainNavigation.css";
 
 const MainNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -57,34 +58,14 @@ const MainNavigation = () => {
 
   return (
     <>
-      <nav
-        style={{
-          position: "fixed",
-          background: "white",
-          width: "1523px",
-          height: "76px",
-          left: "0px",
-          top: "0px",
-          boxShadow: "0px 6px 28px rgba(0, 0, 0, 0.15)",
-          zIndex: 2,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              left: "205px",
-              top: "21px",
-            }}
-          >
+      <nav className="main_nav">
+        <div className="main_nav_wrapper">
+          <div className="logo_container">
             <img src={logo} alt="Walk It Logo" width="135px" height="41px" />
           </div>
 
           <p
+            className="our_story"
             onClick={openStoryOverlay}
             style={{
               textDecoration: "none",
@@ -151,11 +132,7 @@ const MainNavigation = () => {
                   fontFamily: "PoppinsRegular",
                 }}
               >
-                <a
-                  href="/#target_section"
-                >
-                  Issues Targeted
-                </a>
+                <a href="/#target_section">Issues Targeted</a>
               </span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
@@ -336,13 +313,13 @@ const MainNavigation = () => {
               height: "42px",
               left: "1195px",
               top: "19px",
-              textTransform:'none',
-                "&:hover":{
-                  backgroundColor:"#ffffff",
-                  border: "1px solid #FED636",
-                  color:"#48017D",
-                  fontWeight:"bold",
-                }
+              textTransform: "none",
+              "&:hover": {
+                backgroundColor: "#ffffff",
+                border: "1px solid #FED636",
+                color: "#48017D",
+                fontWeight: "bold",
+              },
             }}
             onClick={openOverlay}
           >
