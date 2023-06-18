@@ -15,6 +15,7 @@ import navbar4 from "../assets/images/navbar4.svg";
 import logo from "../assets/images/walkLogo.svg";
 import missionNav from "../assets/images/missionNav.png";
 
+import "./MainNavigation.css";
 
 const MainNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -57,51 +58,13 @@ const MainNavigation = () => {
 
   return (
     <>
-      <nav
-        style={{
-          position: "fixed",
-          background: "white",
-          width: "1523px",
-          height: "76px",
-          left: "0px",
-          top: "0px",
-          boxShadow: "0px 6px 28px rgba(0, 0, 0, 0.15)",
-          zIndex: 2,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              left: "205px",
-              top: "21px",
-            }}
-          >
+      <nav className="main_nav">
+        <div className="main_nav_wrapper">
+          <div className="logo_container">
             <img src={logo} alt="Walk It Logo" width="135px" height="41px" />
           </div>
 
-          <p
-            onClick={openStoryOverlay}
-            style={{
-              textDecoration: "none",
-              color: "black",
-              position: "absolute",
-              width: "95px",
-              height: "24px",
-              left: "399px",
-              top: "29px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-              fontWeight: 500,
-              fontSize: "16px",
-              lineHeight: "24px",
-              cursor: "pointer",
-            }}
-          >
+          <p className="our_story" onClick={openStoryOverlay}>
             Our Story
           </p>
 
@@ -112,6 +75,7 @@ const MainNavigation = () => {
             aria-expanded={open ? "true" : undefined}
             // variant="contained"
             onClick={handleClick}
+            className="about_us_btn"
             sx={{
               position: "absolute",
               width: "120px",
@@ -143,46 +107,26 @@ const MainNavigation = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Values />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                <a
-                  href="/#target_section"
-                >
-                  Issues Targeted
-                </a>
+              <span className="ff_poppins_reg">
+                <a href="/#target_section">Issues Targeted</a>
               </span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Benefits />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Benefits
-              </span>
+              <span className="ff_poppins_reg">Benefits</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleClose} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <img src={missionNav} alt="" />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Mission & Vision
-              </span>
+              <span className="ff_poppins_reg">Mission & Vision</span>
             </MenuItem>
           </StyledMenu>
 
@@ -224,102 +168,43 @@ const MainNavigation = () => {
             onClose={handleCloseJoin}
           >
             <MenuItem onClick={handleCloseJoin} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Partner />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                As a Partner
-              </span>
+              <span className="ff_poppins_reg">As a Partner</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleCloseJoin} disableRipple>
               <div style={{ padding: "6px 7px 0px 0px" }}>
                 <Volunteer />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Volunteer
-              </span>
+              <span className="ff_poppins_reg">Volunteer</span>
             </MenuItem>
             <Divider sx={{ my: 0.5, mr: 1, ml: 1 }} />
             <MenuItem onClick={handleCloseJoin} disableRipple>
-              <div style={{ padding: "6px 7px 0px 0px" }}>
+              <div className="menu_icon">
                 <Community />
               </div>
-              <span
-                style={{
-                  fontFamily: "PoppinsRegular",
-                }}
-              >
-                Community
-              </span>
+              <span className="ff_poppins_reg">Community</span>
             </MenuItem>
           </StyledMenu>
 
-          <div
-            style={{
-              position: "absolute",
-              left: "973px",
-              top: "22px",
-              display: "flex",
-              width: "150.89px",
-              height: "46.34px",
-            }}
-          >
+          <div className="nav_translations_container">
             <a href="/">
-              <img
-                src={navbar1}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "0px",
-                  width: "25px",
-                  height: "25px",
-                }}
-              />
+              <img className="navbar1" src={navbar1} alt="" />
             </a>
 
             <a href="/">
-              <img
-                src={navbar2}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "45px",
-                }}
-              />
+              <img className="navbar2" src={navbar2} alt="" />
             </a>
 
             <a href="/">
               {" "}
-              <img
-                src={navbar3}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "90px",
-                }}
-              />
+              <img className="navbar3" src={navbar3} alt="" />
             </a>
 
             <a href="/">
-              <img
-                src={navbar4}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "135px",
-                  width: "22.89px",
-                  height: "46.34px",
-                }}
-              />
+              <img className="navbar4" src={navbar4} alt="" />
             </a>
           </div>
 
@@ -336,13 +221,13 @@ const MainNavigation = () => {
               height: "42px",
               left: "1195px",
               top: "19px",
-              textTransform:'none',
-                "&:hover":{
-                  backgroundColor:"#ffffff",
-                  border: "1px solid #FED636",
-                  color:"#48017D",
-                  fontWeight:"bold",
-                }
+              textTransform: "none",
+              "&:hover": {
+                backgroundColor: "#ffffff",
+                border: "1px solid #FED636",
+                color: "#48017D",
+                fontWeight: "bold",
+              },
             }}
             onClick={openOverlay}
           >
@@ -351,103 +236,29 @@ const MainNavigation = () => {
         </div>
       </nav>
 
-      <div
-        id="overlay"
-        style={{
-          position: "fixed",
-          display: "none",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
-          zIndex: 3,
-        }}
-      >
-        <div
-          id="text"
-          style={{
-            position: "relative",
-            top: "50%",
-            left: "50%",
-            fontSize: "12px",
-            color: "white",
-            transform: "translate(-50%,-50%)",
-            backgroundColor: "#FFFFFF",
-            width: "593px",
-            height: "509px",
-            boxShadow: "0px 0px 77px 82px rgba(0, 0, 0, 0.1)",
-            borderRadius: "30px",
-          }}
-        >
-          <p
-            style={{
-              position: "absolute",
-              width: "63px",
-              height: "31px",
-              left: "30px",
-              top: "42px",
-              fontFamily: "PoppinsRegular",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "25px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            FAQ
-          </p>
-          <div
-            style={{
-              fontFamily: "PoppinsRegular",
-              position: "absolute",
-              width: "526px",
-              height: "465px",
-              left: "30px",
-              top: "93px",
-              fontStyle: "normal",
-              // fontWeight: 700,
-              fontSize: "12px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+      <div id="overlay" className="faq_modal">
+        <div className="faq_modal_wrapper" id="text">
+          <p className="faq_header">FAQ</p>
+          <div className="faq_container">
+            <div className="faq_wrapper faq_first">
+              <p>
                 <span>Q:</span>
                 &nbsp; Does the device make use of SIM for the emergency module?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Yes, the device makes use of a GSM module to perform the
                 location-tracking feature.
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "50px",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+            <div className="faq_wrapper faq_second">
+              <p>
                 <span>Q:</span>
                 &nbsp; Can the device detect pit holes, unleveled roads, wide
                 gutters etc
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Yes, This product considers the real challenges they face
                 based on data gotten from user feedback. The aim is to
@@ -455,61 +266,40 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "125px",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+            <div className="faq_wrapper faq_third">
+              <p>
                 <span>Q:</span>
                 &nbsp; Who are your target audience and what class (Rich,
                 Average, Poor, Helpless) of persons is this project on?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Our target market is the visually impaired and is price
                 inclusive for every class.
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "190px",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+            <div className="faq_wrapper faq_forth">
+              <p>
                 <span>Q:</span>
                 &nbsp; Is there a particular way for the users to wear the
                 device?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; There would be a strap on the back, but besides that it
-                will be customizable to meet the users need i.eUsers can decide
+                will be customizable to meet the users need i.e Users can decide
                 to have it as a strap on their cane / chest, or for it to be
                 worn as a belt etc.
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "265px",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+            <div className="faq_wrapper faq_fifth">
+              <p>
                 <span>Q:</span>
                 &nbsp; Can the device connect to other smart objects?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; The current prototype cannot connect to other smart
                 object, the end goal of this device is to behave like an
@@ -519,97 +309,17 @@ const MainNavigation = () => {
               </p>
             </div>
           </div>
-          <button
-            style={{
-              position: "absolute",
-              width: "91px",
-              height: "35px",
-              left: "476px",
-              top: "447px",
-              backgroundColor: "#48017D",
-              border: "none",
-              borderRadius: "30px",
-              color: "#fff",
-              cursor: "pointer",
-            }}
-            onClick={closeOverlay}
-          >
+          <button className="faq_modal_close_btn" onClick={closeOverlay}>
             <p>Close</p>
           </button>
         </div>
       </div>
 
-      <div
-        id="story_overlay"
-        style={{
-          position: "fixed",
-          display: "none",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
-          zIndex: 3,
-        }}
-      >
-        <div
-          id="text"
-          style={{
-            position: "relative",
-            top: "50%",
-            left: "50%",
-            fontSize: "12px",
-            color: "white",
-            transform: "translate(-50%,-50%)",
-            backgroundColor: "#FFFFFF",
-            boxShadow: "0px 0px 77px 82px rgba(0, 0, 0, 0.1)",
-            borderRadius: "30px",
-            width: "636px",
-            height: "585px",
-          }}
-        >
-          <p
-            style={{
-              position: "absolute",
-              width: "115px",
-              height: "31px",
-              left: "33px",
-              top: "43px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "25px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            Our Story
-          </p>
-          <div
-            style={{
-              fontFamily: "PoppinsRegular",
-              position: "absolute",
-              width: "526px",
-              height: "465px",
-              left: "33px",
-              top: "85px",
-              fontStyle: "normal",
-              fontSize: "12px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-              }}
-            >
+      <div id="story_overlay" className="our_story_modal">
+        <div id="text" className="our_story_container">
+          <p className="our_story_header">Our Story</p>
+          <div className="our_story_text_wrapper">
+            <div className="our_story_text our_story_text_first">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 This innovative idea came about during a training bootcamp in
                 enrolled in while in the university 2020. At the end of the
@@ -628,14 +338,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "160px",
-              }}
-            >
+            <div className="our_story_text our_story_text_second">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In the following years, a prototype I created was exhibited
                 during the Babcock University Computer Club (BUCC) Software
@@ -645,14 +348,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "220px",
-              }}
-            >
+            <div className="our_story_text our_story_text_third">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Over time, a goal-driven team inspired to achieve this value has
                 been growing, and this product has been iterated severally based
@@ -661,14 +357,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "280px",
-              }}
-            >
+            <div className="our_story_text our_story_text_forth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In 2023, it was registered as a company named Walk IT Enterprise
                 with the Corporate Affairs Commission (CAC) to legalize all
@@ -678,14 +367,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "340px",
-              }}
-            >
+            <div className="our_story_text our_story_text_fifth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Today, we are continually working on new and innovative ways to
                 improve our products and services for our clients. Our team is
@@ -696,18 +378,7 @@ const MainNavigation = () => {
             </div>
           </div>
           <button
-            style={{
-              position: "absolute",
-              width: "110px",
-              height: "42px",
-              left: "476px",
-              top: "509px",
-              backgroundColor: "#48017D",
-              border: "none",
-              borderRadius: "30px",
-              color: "#fff",
-              cursor: "pointer",
-            }}
+            className="our_story_modal_close_btn"
             onClick={closeStoryOverlay}
           >
             <p>Close</p>
