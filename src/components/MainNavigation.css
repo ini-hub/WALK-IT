@@ -240,14 +240,12 @@
 }
 
 .our_story_text {
-  background-color: red;
   position: absolute;
   color: #000;
   font-family: "PoppinsRegular";
 }
 
 .our_story_text > p:first-of-type {
-  background-color: blue;
   color: #000;
   font-family: "PoppinsRegular";
 }
