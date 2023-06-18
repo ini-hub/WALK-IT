@@ -185,71 +185,26 @@ const MainNavigation = () => {
               <div className="menu_icon">
                 <Community />
               </div>
-              <span
-                className="ff_poppins_reg"
-              >
-                Community
-              </span>
+              <span className="ff_poppins_reg">Community</span>
             </MenuItem>
           </StyledMenu>
 
-          <div
-            style={{
-              position: "absolute",
-              left: "973px",
-              top: "22px",
-              display: "flex",
-              width: "150.89px",
-              height: "46.34px",
-            }}
-          >
+          <div className="nav_translations_container">
             <a href="/">
-              <img
-                src={navbar1}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "0px",
-                  width: "25px",
-                  height: "25px",
-                }}
-              />
+              <img className="navbar1" src={navbar1} alt="" />
             </a>
 
             <a href="/">
-              <img
-                src={navbar2}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "45px",
-                }}
-              />
+              <img className="navbar2" src={navbar2} alt="" />
             </a>
 
             <a href="/">
               {" "}
-              <img
-                src={navbar3}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "90px",
-                }}
-              />
+              <img className="navbar3" src={navbar3} alt="" />
             </a>
 
             <a href="/">
-              <img
-                src={navbar4}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "135px",
-                  width: "22.89px",
-                  height: "46.34px",
-                }}
-              />
+              <img className="navbar4" src={navbar4} alt="" />
             </a>
           </div>
 
@@ -281,72 +236,12 @@ const MainNavigation = () => {
         </div>
       </nav>
 
-      <div
-        id="overlay"
-        style={{
-          position: "fixed",
-          display: "none",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
-          zIndex: 3,
-        }}
-      >
-        <div
-          id="text"
-          style={{
-            position: "relative",
-            top: "50%",
-            left: "50%",
-            fontSize: "12px",
-            color: "white",
-            transform: "translate(-50%,-50%)",
-            backgroundColor: "#FFFFFF",
-            width: "593px",
-            height: "509px",
-            boxShadow: "0px 0px 77px 82px rgba(0, 0, 0, 0.1)",
-            borderRadius: "30px",
-          }}
-        >
-          <p
-            style={{
-              position: "absolute",
-              width: "63px",
-              height: "31px",
-              left: "30px",
-              top: "42px",
-              fontFamily: "PoppinsRegular",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "25px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            FAQ
-          </p>
-          <div
-            style={{
-              fontFamily: "PoppinsRegular",
-              position: "absolute",
-              width: "526px",
-              height: "465px",
-              left: "30px",
-              top: "93px",
-              fontStyle: "normal",
-              // fontWeight: 700,
-              fontSize: "12px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
+      <div id="overlay" className="faq_modal" style={{}}>
+        <div className="faq_modal_wrapper" id="text">
+          <p className="faq_header">FAQ</p>
+          <div className="faq_container">
             <div
+              className="faq_wrapper faq_first"
               style={{
                 position: "absolute",
                 color: "#000",
@@ -364,14 +259,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "50px",
-              }}
-            >
+            <div className="faq_wrapper faq_second">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 <span>Q:</span>
                 &nbsp; Can the device detect pit holes, unleveled roads, wide
@@ -385,14 +273,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "125px",
-              }}
-            >
+            <div className="faq_wrapper faq_third">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 <span>Q:</span>
                 &nbsp; Who are your target audience and what class (Rich,
@@ -405,14 +286,7 @@ const MainNavigation = () => {
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "190px",
-              }}
-            >
+            <div className="faq_wrapper faq_forth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 <span>Q:</span>
                 &nbsp; Is there a particular way for the users to wear the
@@ -421,20 +295,13 @@ const MainNavigation = () => {
               <p style={{ fontFamily: "PoppinsRegular" }}>
                 <span>A:</span>
                 &nbsp; There would be a strap on the back, but besides that it
-                will be customizable to meet the users need i.eUsers can decide
+                will be customizable to meet the users need i.e Users can decide
                 to have it as a strap on their cane / chest, or for it to be
                 worn as a belt etc.
               </p>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "265px",
-              }}
-            >
+            <div className="faq_wrapper faq_fifth">
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 <span>Q:</span>
                 &nbsp; Can the device connect to other smart objects?
@@ -450,6 +317,7 @@ const MainNavigation = () => {
             </div>
           </div>
           <button
+            className="faq_modal_close_btn"
             style={{
               position: "absolute",
               width: "91px",
