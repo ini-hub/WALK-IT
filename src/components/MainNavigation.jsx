@@ -236,23 +236,16 @@ const MainNavigation = () => {
         </div>
       </nav>
 
-      <div id="overlay" className="faq_modal" style={{}}>
+      <div id="overlay" className="faq_modal">
         <div className="faq_modal_wrapper" id="text">
           <p className="faq_header">FAQ</p>
           <div className="faq_container">
-            <div
-              className="faq_wrapper faq_first"
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-              }}
-            >
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+            <div className="faq_wrapper faq_first">
+              <p>
                 <span>Q:</span>
                 &nbsp; Does the device make use of SIM for the emergency module?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Yes, the device makes use of a GSM module to perform the
                 location-tracking feature.
@@ -260,12 +253,12 @@ const MainNavigation = () => {
             </div>
 
             <div className="faq_wrapper faq_second">
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>Q:</span>
                 &nbsp; Can the device detect pit holes, unleveled roads, wide
                 gutters etc
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Yes, This product considers the real challenges they face
                 based on data gotten from user feedback. The aim is to
@@ -274,12 +267,12 @@ const MainNavigation = () => {
             </div>
 
             <div className="faq_wrapper faq_third">
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>Q:</span>
                 &nbsp; Who are your target audience and what class (Rich,
                 Average, Poor, Helpless) of persons is this project on?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; Our target market is the visually impaired and is price
                 inclusive for every class.
@@ -287,12 +280,12 @@ const MainNavigation = () => {
             </div>
 
             <div className="faq_wrapper faq_forth">
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>Q:</span>
                 &nbsp; Is there a particular way for the users to wear the
                 device?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; There would be a strap on the back, but besides that it
                 will be customizable to meet the users need i.e Users can decide
@@ -302,11 +295,11 @@ const MainNavigation = () => {
             </div>
 
             <div className="faq_wrapper faq_fifth">
-              <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>Q:</span>
                 &nbsp; Can the device connect to other smart objects?
               </p>
-              <p style={{ fontFamily: "PoppinsRegular" }}>
+              <p>
                 <span>A:</span>
                 &nbsp; The current prototype cannot connect to other smart
                 object, the end goal of this device is to behave like an
@@ -316,97 +309,18 @@ const MainNavigation = () => {
               </p>
             </div>
           </div>
-          <button
-            className="faq_modal_close_btn"
-            style={{
-              position: "absolute",
-              width: "91px",
-              height: "35px",
-              left: "476px",
-              top: "447px",
-              backgroundColor: "#48017D",
-              border: "none",
-              borderRadius: "30px",
-              color: "#fff",
-              cursor: "pointer",
-            }}
-            onClick={closeOverlay}
-          >
+          <button className="faq_modal_close_btn" onClick={closeOverlay}>
             <p>Close</p>
           </button>
         </div>
       </div>
 
-      <div
-        id="story_overlay"
-        style={{
-          position: "fixed",
-          display: "none",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
-          zIndex: 3,
-        }}
-      >
-        <div
-          id="text"
-          style={{
-            position: "relative",
-            top: "50%",
-            left: "50%",
-            fontSize: "12px",
-            color: "white",
-            transform: "translate(-50%,-50%)",
-            backgroundColor: "#FFFFFF",
-            boxShadow: "0px 0px 77px 82px rgba(0, 0, 0, 0.1)",
-            borderRadius: "30px",
-            width: "636px",
-            height: "585px",
-          }}
-        >
-          <p
-            style={{
-              position: "absolute",
-              width: "115px",
-              height: "31px",
-              left: "33px",
-              top: "43px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "25px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
-            Our Story
-          </p>
-          <div
-            style={{
-              fontFamily: "PoppinsRegular",
-              position: "absolute",
-              width: "526px",
-              height: "465px",
-              left: "33px",
-              top: "85px",
-              fontStyle: "normal",
-              fontSize: "12px",
-              lineHeight: "123%",
-              letterSpacing: "-0.02em",
-              color: "#000000",
-            }}
-          >
+      <div id="story_overlay" className="our_story_modal">
+        <div id="text" className="our_story_container">
+          <p className="our_story_header">Our Story</p>
+          <div className="our_story_text_wrapper">
             <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-              }}
+              className="our_story_text our_story_text_first"
             >
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 This innovative idea came about during a training bootcamp in
@@ -427,12 +341,8 @@ const MainNavigation = () => {
             </div>
 
             <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "160px",
-              }}
+              className="our_story_text our_story_text_second"
+              
             >
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In the following years, a prototype I created was exhibited
@@ -444,12 +354,8 @@ const MainNavigation = () => {
             </div>
 
             <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "220px",
-              }}
+              className="our_story_text our_story_text_third"
+              
             >
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Over time, a goal-driven team inspired to achieve this value has
@@ -460,12 +366,8 @@ const MainNavigation = () => {
             </div>
 
             <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "280px",
-              }}
+              className="our_story_text our_story_text_forth"
+              
             >
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 In 2023, it was registered as a company named Walk IT Enterprise
@@ -477,12 +379,8 @@ const MainNavigation = () => {
             </div>
 
             <div
-              style={{
-                position: "absolute",
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-                top: "340px",
-              }}
+              className="our_story_text our_story_text_fifth"
+              
             >
               <p style={{ color: "#000", fontFamily: "PoppinsRegular" }}>
                 Today, we are continually working on new and innovative ways to
@@ -494,6 +392,7 @@ const MainNavigation = () => {
             </div>
           </div>
           <button
+            className="our_story_modal_close_btn"
             style={{
               position: "absolute",
               width: "110px",
